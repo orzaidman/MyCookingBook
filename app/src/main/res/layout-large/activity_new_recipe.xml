@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_no_logo"
+    tools:context="cookingbook.or.mycookingbooknew.activity.newRecipe">
+
+    <ImageView
+        android:id="@+id/new_IMG_logo"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/img_logo"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/img_back" />
+    <TextView
+        android:id="@+id/new_TXT_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_18sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/new_IMG_logo"
+        android:fontFamily="@font/hebrow_lior"
+        android:textColor="#FFFFFF"
+        android:text="מתכון חדש"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_TXT_title"
+        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_35sdp"
+        android:background="@drawable/img_notepad">
+
+
+        <TextView
+            android:id="@+id/new_TXT_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_28sdp"
+            android:fontFamily="@font/hebrow_lior"
+            android:text="כותרת: "
+            android:textColor="#000000"
+            android:textSize="@dimen/_16sdp" />
+
+
+        <EditText
+            android:id="@+id/new_EDIT_name"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toLeftOf="@id/new_TXT_name"
+            android:gravity="right"
+            app:errorEnabled="true" />
+
+
+        <TextView
+            android:id="@+id/type_TXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/new_TXT_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_28sdp"
+            android:fontFamily="@font/hebrow_lior"
+            android:text="סוג:"
+            android:textColor="#000000"
+            android:textSize="@dimen/_16sdp" />
+
+        <Spinner
+            android:id="@+id/type"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/new_TXT_name"
+            android:layout_margin="@dimen/_25sdp"
+            android:layout_toLeftOf="@id/type_TXT"
+            android:background="@drawable/ttt"
+            android:fontFamily="@font/hebrow_lior"
+            android:textColor="#000000"
+
+            />
+
+
+        <TextView
+            android:id="@+id/type_ingredient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/type_TXT"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_28sdp"
+            android:fontFamily="@font/hebrow_lior"
+            android:text="מצרכים:"
+            android:textColor="#000000"
+            android:textSize="@dimen/_16sdp" />
+
+
+        <EditText
+            android:id="@+id/new_EDIT_ingredient"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/type_TXT"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_toLeftOf="@id/type_ingredient"
+            android:gravity="right"
+            android:textColor="#000000" />
+
+        <ListView
+            android:id="@+id/listView_ingredient"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_below="@+id/type_ingredient"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ttt"
+            android:textColor="#000000"
+
+            />
+
+        <Button
+            android:id="@+id/new_add_one_ingr"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_below="@id/type_TXT"
+            android:layout_marginLeft="@dimen/_23sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/add"
+            android:textColor="#000000"
+            android:textSize="@dimen/_15sdp" />
+
+
+        <TextView
+            android:id="@+id/new_TXT_preparation_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/listView_ingredient"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_28sdp"
+            android:fontFamily="@font/hebrow_lior"
+            android:text="שלבי הכנה:"
+            android:textColor="#000000"
+            android:textSize="@dimen/_16sdp" />
+
+
+        <EditText
+            android:id="@+id/popupTXT_preparation_method"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/new_TXT_preparation_method"
+            android:background="@drawable/ttt"
+            android:fontFamily="@font/hebrow_lior"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:gravity="right"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_above="@id/new_BTN_add"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_5sdp"/>
+
+
+        <TextView
+            android:id="@+id/end"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_5sdp"
+            android:layout_alignParentBottom="true"/>
+        <Button
+            android:id="@+id/new_BTN_add"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_18sdp"
+            android:background="@drawable/img_done"
+            android:fontFamily="@font/hebrow_lior"
+            android:layout_above="@id/end"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

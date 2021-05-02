@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/low"
+    tools:context="cookingbook.or.mycookingbooknew.activity.LogIn">
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/img_notepad"
+    android:layout_marginTop="140dp"
+    android:layout_marginBottom="60dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    >
+
+
+    <TextView
+        android:id="@+id/log_in_TXT_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הרשמה"
+        android:fontFamily="@font/hebrow_lior"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:textSize="26dp"/>
+
+
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:textColor="#444343"
+            android:background="@drawable/ttt"
+            android:drawableRight="@drawable/ic_action_phone"
+            android:fontFamily="@font/hebrow_lior"
+            android:drawableLeft="@drawable/ic_action_ok"
+            android:id="@+id/login_TXT_phone_number"
+            android:hint=" מספר טלפון"
+            android:textColorHint="#FF707070"
+            tools:ignore="MissingConstraints"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/log_in_TXT_title"
+            />
+
+
+
+    <Button
+        android:id="@+id/login_send_code"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/corners_btn"
+        android:textSize="20dp"
+        android:fontFamily="@font/hebrow_lior"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/login_TXT_phone_number"
+        android:text="  שלח לי קוד  "/>
+
+
+    <TextView
+        android:id="@+id/log_in_TXT_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הקוד יתקבל בהודעה בעוד מספר שניות"
+        android:fontFamily="@font/hebrow_lior"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_below="@id/login_send_code"
+        android:textColor="#000000"
+        android:textSize="16dp"/>
+
+    <EditText
+        android:id="@+id/login_TXT_password"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:hint=" הזן קוד "
+        android:layout_marginTop="20dp"
+        android:textColorHint="#FF707070"
+        tools:ignore="MissingConstraints"
+        android:textSize="20dp"
+        android:textColor="#444343"
+        android:fontFamily="@font/hebrow_lior"
+        android:background="@drawable/ttt"
+        android:drawableRight="@drawable/ic_action_code"
+        android:layout_below="@+id/log_in_TXT_title2"
+        android:layout_centerHorizontal="true"
+
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/log_in_BTN_send"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/corners_btn"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/hebrow_lior"
+        android:textColor="#000000"
+android:layout_below="@+id/login_TXT_password"
+        android:layout_centerHorizontal="true"
+        android:text="  סיום הרשמה  "/>
+
+
+</RelativeLayout>
+
+
+</RelativeLayout>

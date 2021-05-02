@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_no_logo"
+    tools:context="cookingbook.or.mycookingbooknew.activity.allRecipe">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img_logo"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/img_back"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/logo"
+            android:id="@+id/all_LINEAR">
+
+            <Button
+                android:id="@+id/all_BTN_first"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@drawable/img_first"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+
+                />
+
+
+            <Button
+                android:id="@+id/all_BTN_adds"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@drawable/img_adds"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/_10sdp"
+
+                />
+
+            <Button
+                android:id="@+id/all_BTN_main"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@drawable/img_main"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+
+                />
+
+            <Button
+                android:id="@+id/all_BTN_dessert"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@drawable/img_dessert"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
